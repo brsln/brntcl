@@ -1266,43 +1266,69 @@ img {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 1.5rem;
-    margin-top: 2.5rem;
+    gap: 2rem;
+    margin-top: 3rem;
 }
 
 .social-actions-container .btn {
-    padding: 0.875rem 2.25rem;
-    font-size: 1.15rem;
-    font-weight: 700;
-    border-radius: var(--radius-lg);
-    border: 2px solid var(--color-primary);
+    min-width: 340px;
+    min-height: 4.75rem;
+    padding: 1.25rem 2.75rem;
+    font-size: 1.5rem;
+    font-weight: 800;
+    border-radius: 9999px;
+    border: 2.5px solid var(--color-primary);
     color: var(--color-primary);
-    gap: 0.75rem;
-    box-shadow: var(--shadow-sm);
-    transition: var(--transition);
+    background-color: var(--color-white);
+    gap: 1.25rem;
+    box-shadow: 0 10px 25px rgba(63, 80, 134, 0.12);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-actions-container .btn i {
-    font-size: 1.5rem;
+    font-size: 2.25rem;
+}
+
+.social-actions-container .btn .fa-instagram {
+    color: #e1306c;
+    transition: color 0.3s ease;
+}
+
+.social-actions-container .btn .fa-facebook {
+    color: #1877f2;
+    transition: color 0.3s ease;
 }
 
 .social-actions-container .btn:hover {
     background-color: var(--color-primary);
     color: var(--color-white);
-    transform: translateY(-2px);
-    box-shadow: var(--shadow-md);
+    border-color: var(--color-primary);
+    transform: translateY(-4px) scale(1.02);
+    box-shadow: 0 16px 35px rgba(63, 80, 134, 0.25);
 }
 
-@media (max-width: 640px) {
+.social-actions-container .btn:hover i {
+    color: var(--color-white) !important;
+}
+
+@media (max-width: 768px) {
     .social-actions-container {
-        gap: 1rem;
+        gap: 1.25rem;
+        margin-top: 2rem;
     }
 
     .social-actions-container .btn {
         width: 100%;
-        max-width: 340px;
-        padding: 0.875rem 1.5rem;
-        font-size: 1.05rem;
+        max-width: 420px;
+        min-width: unset;
+        min-height: 4.25rem;
+        padding: 1rem 1.75rem;
+        font-size: 1.3rem;
+        gap: 1rem;
+    }
+
+    .social-actions-container .btn i {
+        font-size: 1.85rem;
     }
 }
 
