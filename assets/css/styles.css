@@ -1327,6 +1327,10 @@ img {
 }
 
 /* Map Component */
+.location-address {
+    line-height: 1.85;
+}
+
 .map-wrapper {
     width: calc(100% - 2rem);
     max-width: 1200px;
